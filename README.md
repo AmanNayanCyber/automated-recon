@@ -1,6 +1,6 @@
 # Automated Recon Tool
 
-## Descriptio
+## Description
 This project automates basic reconnaissance tasks used in cybersecurity.
 
 ## Features
