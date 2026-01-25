@@ -1,22 +1,51 @@
-# Automated Recon Tool
+# Ethical Nmap Recon Tool
 
-## Description
-This project automates basic reconnaissance tasks used in cybersecurity.
+A Python-based ethical reconnaissance tool that wraps Nmap with proper authorization checks, input validation, scan customization, and controlled execution.
 
-## Features
-- Port scanning using Nmap
-- Basic target enumeration
-- Automated output generation
+This project focuses on **responsible security automation**, not blind scanning.
 
-## Tools Used
-- Python
-- Nmap
-- Linux
+---
 
-## How to Run
-python recon.py target.com
+## 🚀 Features
 
-## What I Learned
-- Reconnaissance workflow
-- Automation using Python
-- Security fundamentals
+- Explicit **authorization check** before scanning
+- Clear **ethical disclaimer**
+- Target input validation (empty input blocked)
+- DNS resolution check (invalid targets blocked)
+- Dependency check for Nmap
+- **Scan type selection**
+  - Fast scan (`-F`)
+  - Service version detection (`-sV`)
+  - TCP connect scan (`-sT`)
+- **Output format selection**
+  - Normal (`-oN`)
+  - XML (`-oX`)
+  - All formats (`-oA`)
+- Optional **host discovery bypass (`-Pn`)**
+- Automatic report generation
+- Clean exit and user-friendly messages
+
+---
+
+## 🧠 Why this tool exists
+
+While Nmap already provides powerful scanning capabilities, this tool adds:
+
+- Ethical enforcement
+- User intent validation
+- Safer defaults
+- Workflow automation
+- SOC-style operational thinking
+
+The goal is to demonstrate **how security tools should be used responsibly in real environments**.
+
+---
+
+## 🛠️ Requirements
+
+- Python 3.x
+- Nmap installed and available in PATH
+
+Check Nmap installation:
+```bash
+nmap --version
